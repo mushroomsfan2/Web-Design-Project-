@@ -127,7 +127,6 @@ function updateCartDisplay() {
             emptyCartMessage.style.display = 'none';
         }
         
-        // Display each cart item
         cart.forEach((item, index) => {
             const cartItemDiv = document.createElement('div');
             cartItemDiv.className = 'cart-item';
@@ -166,7 +165,7 @@ function updateCartDisplay() {
         }
     }
     
-    console.log('Display updated. Cart has', cart.length, 'items'); // Debug line
+    console.log('Display updated. Cart has', cart.length, 'items'); 
 }
 
 
