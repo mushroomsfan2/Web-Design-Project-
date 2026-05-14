@@ -432,7 +432,6 @@ body {
     border-top: 4px solid var(--uniform-purple);
 }
 
-/* Make sure all content boxes have visible backgrounds */
 .feature-card h3,
 .product-card h3 {
     color: var(--uniform-purple);
@@ -441,7 +440,6 @@ body {
     padding-bottom: 10px;
 }
 
-/* Contact page boxes */
 .contact-form {
     max-width: 600px;
     margin: 0 auto;
@@ -452,7 +450,6 @@ body {
     border: 2px solid var(--border-color);
 }
 
-/* About page boxes */
 .feature-card h4 {
     color: var(--deep-blue);
     margin-bottom: 10px;
