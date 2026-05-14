@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Contact Tokyo Jujutsu Academy. Visit our campus, call us, or send a message to learn about enrollment and training programs.">
+    <title>Tokyo Jujutsu Academy - Contact Us | Enrollment & Information</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <a href="#main-content" class="skip-nav">Skip to Main Content</a>
+    
+    <header class="header-banner" role="banner">
+        <div class="banner-content">
+            <h1 class="academy-name">Tokyo Jujutsu Academy</h1>
+            <p class="academy-tagline">"Master Your Cursed Energy, Defend Humanity"</p>
+        </div>
+    </header>
+    
+
+    <nav class="main-nav" role="navigation" aria-label="Main navigation">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="order.html">Cursed Tools Shop</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="contact.html" class="active" aria-current="page">Contact</a></li>
+        </ul>
+    </nav>
+
+    <main id="main-content" class="main-content" role="main">
+        <h2 style="text-align: center; margin-bottom: 30px; color: var(--ink-black);">Contact Tokyo Jujutsu Academy</h2>
+        
+    
+        <div class="two-column-layout">
+            
+            <section aria-labelledby="contact-info-heading">
+                <h3 id="contact-info-heading" style="color: var(--uniform-purple);">Visit or Call Us</h3>
+                
+                <div class="feature-card" style="margin-bottom: 20px;">
+                    <h4>Academy Location</h4>
+                    <p>Shibuya District</p>
+                    <p>Tokyo, Japan 100-0001</p>
+                </div>
+                
+                <div class="feature-card" style="margin-bottom: 20px;">
+                    <h4>Phone Numbers</h4>
+                    <p>Main Office: (555) 123-4567</p>
+                    <p>Enrollment: (555) 123-4568</p>
+                </div>
+                
+                <div class="feature-card" style="margin-bottom: 20px;">
+                    <h4>Email Addresses</h4>
+                    <p>General Inquiries: info@tokyojujutsuacademy.edu</p>
+                    <p>Enrollment: enroll@tokyojujutsuacademy.edu</p>
+                    <p>Support: support@tokyojujutsuacademy.edu</p>
+                </div>
+                
+                
+                <div class="image-container">
+                    <img src="images/Kyoto_Jujutsu_High.jpg" 
+                         alt="Map showing Tokyo Jujutsu Academy location in Shibuya district with nearby landmarks"
+                         width="500" height="350">
+                    <p class="image-caption">Academy Location - Shibuya District, Tokyo</p>
+                    <p class="image-citation">Map data: Fictional representation based on Tokyo geography</p>
+                </div>
+            </section>
+
+            <section aria-labelledby="contact-form-heading">
+                <h3 id="contact-form-heading" style="color: var(--uniform-purple);">Send Us a Message</h3>
+                
+                <form class="contact-form" id="contactForm" aria-label="Contact form">
+                    <div class="form-group">
+                        <label for="fullName" class="required">Full Name</label>
+                        <input type="text" 
+                               id="fullName" 
+                               name="fullName" 
+                               required 
+                               aria-required="true"
+                               placeholder="Enter your full name"
+                               autocomplete="name">
+                        <span class="error-message" id="nameError" role="alert">Please enter your full name.</span>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="email" class="required">Email Address</label>
+                        <input type="email" 
+                               id="email" 
+                               name="email" 
+                               required 
+                               aria-required="true"
+                               placeholder="Enter your email address"
+                               autocomplete="email">
+                        <span class="error-message" id="emailError" role="alert">Please enter a valid email address.</span>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="phone">Phone Number</label>
+                        <input type="tel" 
+                               id="phone" 
+                               name="phone" 
+                               placeholder="Enter your phone number"
+                               autocomplete="tel">
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="inquiryType">Type of Inquiry</label>
+                        <select id="inquiryType" name="inquiryType">
+                            <option value="">Select inquiry type...</option>
+                            <option value="enrollment">Enrollment Information</option>
+                            <option value="tools">Cursed Tools & Equipment</option>
+                            <option value="training">Training Programs</option>
+                            <option value="visit">Schedule a Visit</option>
+                            <option value="other">Other</option>
+                        </select>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="message" class="required">Your Message</label>
+                        <textarea id="message" 
+                                  name="message" 
+                                  rows="6" 
+                                  required 
+                                  aria-required="true"
+                                  placeholder="Tell us how we can help you..."
+                                  maxlength="1000"></textarea>
+                        <span class="error-message" id="messageError" role="alert">Please enter your message (maximum 1000 characters).</span>
+                        <p style="font-size: 0.9rem; color: #666; margin-top: 5px;">
+                            Characters remaining: <span id="charCount">1000</span>
+                        </p>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label>
+                            <input type="checkbox" id="newsletter" name="newsletter" value="yes">
+                            Subscribe to our newsletter for updates on new cursed tools and training programs
+                        </label>
+                    </div>
+                    
+                    <button type="submit" class="submit-btn" aria-label="Submit your message">
+                        Send Message
+                    </button>
+                    
+                    <p style="margin-top: 15px; font-size: 0.9rem;">
+                        <span class="required"></span> indicates required fields
+                    </p>
+                </form>
+
+                <div id="successMessage" style="display: none; text-align: center; padding: 40px; background: var(--white); border-radius: 8px; border: 2px solid var(--success-green);" role="alert">
+                    <h3 style="color: var(--success-green);">Message Sent Successfully!</h3>
+                    <p>Thank you for contacting Tokyo Jujutsu Academy. A member of our staff will respond within 24 hours.</p>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <footer class="main-footer" role="contentinfo">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>Tokyo Jujutsu Academy</h3>
+                <p>Your journey to becoming a Jujutsu Sorcerer starts here.</p>
+            </div>
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <a href="index.html">Home</a>
+                <a href="order.html">Cursed Tools Shop</a>
+                <a href="about.html">About Us</a>
+                <a href="contact.html">Contact</a>
+            </div>
+            <div class="footer-section">
+                <h3>Office Hours</h3>
+                <p>Monday - Friday: 8:00 AM - 6:00 PM</p>
+                <p>Saturday: 9:00 AM - 4:00 PM</p>
+                <p>Sunday: Closed</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p class="copyright">&copy; 2025 Tokyo Jujutsu Academy. Zaire Edwards, oZaireEdwards@stu.centralaz.edu, Web Designer. All rights reserved.</p>
+        </div>
+    </footer>
+    
+    <script src="script.js" defer></script>
+</body>
+</html>
